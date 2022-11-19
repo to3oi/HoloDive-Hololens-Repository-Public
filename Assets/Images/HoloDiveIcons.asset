@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb41c8335e2ca96449f3991db5fa5702, type: 3}
+  m_Name: HoloDiveIcons
+  m_EditorClassIdentifier: 
+  quadIcons:
+  - {fileID: 2800000, guid: 27ef2ead982e1c04ab30188efcd6d684, type: 3}
+  - {fileID: 2800000, guid: 4517b9a7a6ea81e479ecc74e0308a7c1, type: 3}
+  - {fileID: 2800000, guid: 80bf58604593b2f41ace8600249a34ac, type: 3}
+  - {fileID: 2800000, guid: ef650d338092cf74b9ed06a4e8dd318a, type: 3}
+  - {fileID: 2800000, guid: 091572eb8bb70434cb31dfb2d611d48d, type: 3}
+  - {fileID: 2800000, guid: c2a1bd80dbe0dcf4b92362cbb520b761, type: 3}
+  - {fileID: 2800000, guid: 67a2de9d29e1fbe4991af746950a382e, type: 3}
+  - {fileID: 2800000, guid: 30064f013cca43943a07d707bccc359b, type: 3}
+  - {fileID: 2800000, guid: 5fbf72bff55d34c4a99cd9eae87adc5a, type: 3}
+  - {fileID: 2800000, guid: 4292626f91383cd49bd2ac20bbe96997, type: 3}
+  - {fileID: 2800000, guid: 1fb418eb0a9365c4c879dd2eb6ff39a8, type: 3}
+  - {fileID: 2800000, guid: aedb2d402c9e7724886a731baecebf06, type: 3}
+  - {fileID: 2800000, guid: d335eab923d219449bcea76e30602bdd, type: 3}
+  - {fileID: 2800000, guid: 72ed606d5a4585942a1f1ed022940071, type: 3}
+  spriteIcons: []
+  charIconFont: {fileID: 0}
+  charIcons:
+  - Name: AppBarAdjust
+    Character: 60370
+  - Name: AppBarClose
+    Character: 59153
+  - Name: AppBarDone
+    Character: 59643
+  - Name: AppBarHide
+    Character: 59244
+  - Name: AppBarShow
+    Character: 59154
+  - Name: AppBarHome
+    Character: 60175
