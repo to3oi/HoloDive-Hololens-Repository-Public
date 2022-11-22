@@ -212,6 +212,14 @@ PlayerSettings:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 6404369128266386416, guid: b42fdfb4301af6441ade275a99f57c43, type: 2}
   - {fileID: 3282686133158980516, guid: 1d0540d5a5e74fc469c4ce894f37a716, type: 2}
   - {fileID: 0}
@@ -806,10 +814,10 @@ PlayerSettings:
   metroPackageName: HoloDive
   metroPackageVersion: 10.11.3.0
   metroCertificatePath: Assets/WSATestCertificate.pfx
-  metroCertificatePassword: XIOD"O
+  metroCertificatePassword: XIOD
   metroCertificateSubject: TECH.C
   metroCertificateIssuer: TECH.C
-  metroCertificateNotAfter: 804fc30eb31ada01
+  metroCertificateNotAfter: 0094f4d1101dda01
   metroApplicationDescription: ImageTargets, ModelTargets, and VuMarks on HoloLens
   wsaImages:
     65636: 

@@ -1059,6 +1059,12 @@ PrefabInstance:
       propertyPath: mMeshRenderer
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 1745216255063750054, guid: 3edcd4731e4f6994db34f11313f6501f,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: dd1ae22656566754c980aea03d42afef,
+        type: 3}
     - target: {fileID: 2224517475452021579, guid: 3edcd4731e4f6994db34f11313f6501f,
         type: 3}
       propertyPath: AlwaysShowObjectDownOffset
@@ -1129,6 +1135,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: StartDevice_IR
       objectReference: {fileID: 0}
+    - target: {fileID: 2224517476659982295, guid: 3edcd4731e4f6994db34f11313f6501f,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 84718cf2f95e7a746b5924ec2da9f6d0,
+        type: 3}
     m_RemovedComponents:
     - {fileID: 466329409, guid: 3edcd4731e4f6994db34f11313f6501f, type: 3}
     - {fileID: 466329405, guid: 3edcd4731e4f6994db34f11313f6501f, type: 3}

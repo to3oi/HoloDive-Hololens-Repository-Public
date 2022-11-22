@@ -73,12 +73,36 @@ public class HologramBaseObject : MonoBehaviour
             isFarstLook = true;
             AlwaysShowObject.SetActive(true);
             AlwaysShowObject.transform.parent = null;
-            var transform1 = Camera.main.transform;
-            AlwaysShowObject.transform.position =
-                transform1.position + transform1.forward * AlwaysShowObjectForwardOffset + -Vector3.up * AlwaysShowObjectDownOffset;
-        }
 
-        ShowObject();
+            //暫定的にカメラの回転を制限したオブジェクトを生成し、前方向のベクトルを取得する
+            //TODO:計算のみで実装
+            var cameraTransform = Camera.main.transform;
+
+            //上下の回転を制限
+            var q = cameraTransform.rotation.eulerAngles;
+            q.x = 0;
+            q.z = 0;
+
+            var tempGameObject = new GameObject("tempGameObject")
+            {
+                transform =
+                {
+                    rotation = Quaternion.Euler(q)
+                }
+            };
+
+            var p = cameraTransform.position +
+                    //前方向に座標を移動
+                    tempGameObject.transform.forward * AlwaysShowObjectForwardOffset +
+                    //カメラのY座標から一定値下にずらす
+                    -Vector3.up * AlwaysShowObjectDownOffset;
+
+            //座標を代入
+            AlwaysShowObject.transform.position = p;
+
+
+            ShowObject();
+        }
     }
 
     public void Invisible()

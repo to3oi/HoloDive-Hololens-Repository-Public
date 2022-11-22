@@ -195,7 +195,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 84718cf2f95e7a746b5924ec2da9f6d0, type: 3}
+  m_Sprite: {fileID: 21300000, guid: dd1ae22656566754c980aea03d42afef, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -217,8 +217,6 @@ GameObject:
   - component: {fileID: 2224517475452021577}
   - component: {fileID: 2224517475452021579}
   - component: {fileID: 2224517475452021578}
-  - component: {fileID: 466329405}
-  - component: {fileID: 466329409}
   m_Layer: 8
   m_Name: ImageTarget_StartDevice_IR
   m_TagString: Untagged
@@ -266,7 +264,7 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 466329409}
+  mPreview: {fileID: 0}
 --- !u!114 &2224517475452021579
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -284,8 +282,8 @@ MonoBehaviour:
   futureObject: {fileID: 2224517476143752070}
   isAlwaysShow: 1
   AlwaysShowObject: {fileID: 2224517475025333974}
-  AlwaysShowObjectForwardOffset: 0.5
-  AlwaysShowObjectUpOffset: 0.25
+  AlwaysShowObjectForwardOffset: 0.6
+  AlwaysShowObjectDownOffset: 0.3
 --- !u!114 &2224517475452021578
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -330,44 +328,6 @@ MonoBehaviour:
   OnTargetLost:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &466329405
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2224517475452021574}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 2224517475452021577}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: startdevice_IR
-  mDatasetName: Vuforia/HoloDive.xml
-  mCastedBehaviour: {fileID: 2224517475452021577}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
---- !u!114 &466329409
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2224517475452021574}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 2224517475452021577}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: startdevice_IR
-  mDatasetName: Vuforia/HoloDive.xml
-  mCastedBehaviour: {fileID: 2224517475452021577}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!1 &2224517475909221071
 GameObject:
   m_ObjectHideFlags: 0
@@ -660,7 +620,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: dd1ae22656566754c980aea03d42afef, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 84718cf2f95e7a746b5924ec2da9f6d0, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
