@@ -1,7 +1,7 @@
 ## 環境構築 
 このプロジェクトではVuforiaEngine10.11.3を使用しています。
 
-ただし、パッケージの容量が250MBほどあるので各自でインポートするようにしてください。
+Vuforiaのアカウントを作成し、以下のリンクよりパッケージをダウンロードし、インポートしてください。
 https://developer.vuforia.com/downloads/sdk
 
 ## 開発期間
@@ -14,6 +14,7 @@ https://developer.vuforia.com/downloads/sdk
 
 |  PakageName  |  Version  |
 | ---- | ---- |
+|  Universal RP  |  12.1.6   |
 |  UniRx  |  6.2.2  |
 |  UniTask  |  2.3.2  |
 |  Mixed Reality Toolkit<br>- Foundation<br>- Extensions<br>- StandardAssets<br>- Tools  |  2.8.2  |
