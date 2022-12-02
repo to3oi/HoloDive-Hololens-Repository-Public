@@ -76,7 +76,7 @@
       "hash": "284d5c50d3f1ddd9fa7df3d382ea904732a9c2ff"
     },
     "com.ptc.vuforia.engine": {
-      "version": "file:com.ptc.vuforia.engine-10.11.3.tgz",
+      "version": "file:../Assets/Editor/Migration/com.ptc.vuforia.engine-10.11.3.tgz",
       "depth": 0,
       "source": "local-tarball",
       "dependencies": {

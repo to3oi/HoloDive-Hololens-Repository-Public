@@ -1,18 +1,21 @@
-## 環境構築 
-このプロジェクトではVuforiaEngine10.11.3を使用しています。
-
+# 環境構築 
+## - Vuforia
 Vuforiaのアカウントを作成し、以下のリンクよりパッケージをダウンロードし、インポートしてください。<br>
 https://developer.vuforia.com/downloads/sdk
 
 
-また以下のリンクの手順より`Mixed Reality WinRT Projections`を追加してください。<br>
+## - MRTK
+以下のリンクの手順より`Mixed Reality WinRT Projections`を追加してください。<br>
 https://learn.microsoft.com/ja-jp/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool
 
 ![Feature Mixed Reality WinRT](/Image/FeatureMixedRealityWinRTImage.png)
 
-## 開発期間
+## - Platform
+Build SettingよりUWPに変更してください。
+
+# 開発期間
 2022/10/05 ~ 
-## 開発環境
+# 開発環境
 |  Tools  |  Version  |
 | ---- | ---- |
 |  Unity  |  2021.3.3f1  |
