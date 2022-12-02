@@ -64,8 +64,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   effectMaterial: {fileID: 2100000, guid: 61e01ffe5d3864b4db0c4d5378588378, type: 2}
-  featureColor: {r: 2.9960785, g: 0, b: 0.09411765, a: 0}
-  pastColor: {r: 0, g: 1.9137255, b: 2.9960785, a: 0}
+  featureColor: {r: 0, g: 1.9137255, b: 2.9960785, a: 0}
+  pastColor: {r: 2.9960785, g: 0, b: 0.09411765, a: 0}
 --- !u!114 &231246240237383479
 MonoBehaviour:
   m_ObjectHideFlags: 0

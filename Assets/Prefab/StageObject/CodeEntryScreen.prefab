@@ -12,8 +12,6 @@ GameObject:
   - component: {fileID: 3076638750784021607}
   - component: {fileID: 3076638750784021610}
   - component: {fileID: 3076638750784021605}
-  - component: {fileID: 973359077}
-  - component: {fileID: 973359081}
   m_Layer: 0
   m_Name: ImageTarget_CodeEntryScreen
   m_TagString: Untagged
@@ -61,7 +59,7 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 973359081}
+  mPreview: {fileID: 0}
 --- !u!114 &3076638750784021610
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -123,46 +121,8 @@ MonoBehaviour:
   futureObject: {fileID: 3076638752063615877}
   isAlwaysShow: 1
   AlwaysShowObject: {fileID: 6075824356816701955}
-  AlwaysShowObjectForwardOffset: 0.3
-  AlwaysShowObjectUpOffset: 0.25
---- !u!114 &973359077
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3076638750784021600}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 3076638750784021607}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: CodeEntryScreen
-  mDatasetName: Vuforia/HoloDive.xml
-  mCastedBehaviour: {fileID: 3076638750784021607}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
---- !u!114 &973359081
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3076638750784021600}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 3076638750784021607}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: CodeEntryScreen
-  mDatasetName: Vuforia/HoloDive.xml
-  mCastedBehaviour: {fileID: 3076638750784021607}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
+  AlwaysShowObjectForwardOffset: 0.6
+  AlwaysShowObjectDownOffset: 0.3
 --- !u!1 &3076638751134587453
 GameObject:
   m_ObjectHideFlags: 0

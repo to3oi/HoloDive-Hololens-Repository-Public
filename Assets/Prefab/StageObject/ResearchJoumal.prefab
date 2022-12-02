@@ -29,12 +29,12 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1192572153183685188}
   m_LocalRotation: {x: -0.7071068, y: -0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: -0.20930006}
+  m_LocalPosition: {x: 0, y: 0, z: -0.21600005}
   m_LocalScale: {x: 0.6, y: 0.5999999, z: 0.5999999}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1192572154302670371}
-  m_Father: {fileID: 4749554309621790972}
+  m_Father: {fileID: 4749554309096185540}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -497,7 +497,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1192572153183685186}
   m_Father: {fileID: 4749554308814213007}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -561,8 +562,7 @@ Transform:
   m_LocalPosition: {x: 0, y: -0, z: -0.0067}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1192572153183685186}
+  m_Children: []
   m_Father: {fileID: 4749554308814213007}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -609,7 +609,6 @@ GameObject:
   - component: {fileID: 6474802045037994601}
   - component: {fileID: 6474802045037994603}
   - component: {fileID: 6474802045037994600}
-  - component: {fileID: 7002362295290430675}
   m_Layer: 0
   m_Name: ImageTarget_ResearchJoumal
   m_TagString: Untagged
@@ -657,7 +656,7 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 7002362295290430675}
+  mPreview: {fileID: 0}
 --- !u!114 &6474802045037994603
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -675,8 +674,8 @@ MonoBehaviour:
   futureObject: {fileID: 4749554309096185541}
   isAlwaysShow: 1
   AlwaysShowObject: {fileID: 1192572153860818873}
-  AlwaysShowObjectForwardOffset: 0.5
-  AlwaysShowObjectUpOffset: 0.25
+  AlwaysShowObjectForwardOffset: 0.6
+  AlwaysShowObjectDownOffset: 0.3
 --- !u!114 &6474802045037994600
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -721,22 +720,3 @@ MonoBehaviour:
   OnTargetLost:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &7002362295290430675
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6474802045037994605}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 6474802045037994601}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: ResearchJournal
-  mDatasetName: Vuforia/HoloDive.xml
-  mCastedBehaviour: {fileID: 6474802045037994601}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}

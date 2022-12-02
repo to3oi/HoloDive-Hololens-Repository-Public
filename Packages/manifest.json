@@ -1,11 +1,24 @@
 {
+  "scopedRegistries": [
+    {
+      "name": "Microsoft Mixed Reality",
+      "url": "https://pkgs.dev.azure.com/aipmr/MixedReality-Unity-Packages/_packaging/Unity-packages/npm/registry/",
+      "scopes": [
+        "com.microsoft.mixedreality",
+        "com.microsoft.spatialaudio"
+      ]
+    }
+  ],
   "dependencies": {
-    "com.microsoft.mixedreality.openxr": "file:MixedReality/com.microsoft.mixedreality.openxr-1.6.0.tgz",
-    "com.microsoft.mixedreality.sceneunderstanding": "file:MixedReality/com.microsoft.mixedreality.sceneunderstanding-0.6.0.tgz",
-    "com.microsoft.mixedreality.toolkit.foundation": "file:MixedReality/com.microsoft.mixedreality.toolkit.foundation-2.8.2.tgz",
-    "com.microsoft.mixedreality.toolkit.standardassets": "file:MixedReality/com.microsoft.mixedreality.toolkit.standardassets-2.8.2.tgz",
-    "com.microsoft.mixedreality.toolkit.tools": "file:MixedReality/com.microsoft.mixedreality.toolkit.tools-2.8.2.tgz",
+    "com.microsoft.mixedreality.openxr": "1.6.0",
+    "com.microsoft.mixedreality.sceneunderstanding": "0.6.0",
+    "com.microsoft.mixedreality.toolkit.extensions": "2.8.2",
+    "com.microsoft.mixedreality.toolkit.foundation": "2.8.2",
+    "com.microsoft.mixedreality.toolkit.standardassets": "2.8.2",
+    "com.microsoft.mixedreality.toolkit.tools": "2.8.2",
     "com.microsoft.windows.mixedreality.dotnetwinrt": "file:MixedReality/com.microsoft.windows.mixedreality.dotnetwinrt-0.5.2009.tgz",
+    "com.cysharp.unitask": "https://github.com/Cysharp/UniTask.git?path=src/UniTask/Assets/Plugins/UniTask",
+    "com.neuecc.unirx": "https://github.com/neuecc/UniRx.git?path=Assets/Plugins/UniRx/Scripts",
     "com.ptc.vuforia.engine": "file:com.ptc.vuforia.engine-10.11.3.tgz",
     "com.unity.2d.sprite": "1.0.0",
     "com.unity.2d.tilemap": "1.0.0",
@@ -52,7 +65,6 @@
     "com.unity.modules.video": "1.0.0",
     "com.unity.modules.vr": "1.0.0",
     "com.unity.modules.wind": "1.0.0",
-    "com.unity.modules.xr": "1.0.0",
-    "com.microsoft.mixedreality.toolkit.extensions": "file:MixedReality/com.microsoft.mixedreality.toolkit.extensions-2.8.2.tgz"
+    "com.unity.modules.xr": "1.0.0"
   }
 }

@@ -4,6 +4,12 @@
 Vuforiaのアカウントを作成し、以下のリンクよりパッケージをダウンロードし、インポートしてください。
 https://developer.vuforia.com/downloads/sdk
 
+
+また以下のリンクの手順より`Feature Mixed Reality WinRT`を追加してください。
+https://learn.microsoft.com/ja-jp/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool
+
+![Feature Mixed Reality WinRT](/Image/FeatureMixedRealityWinRTImage.png)
+
 ## 開発期間
 2022/10/05 ~ 
 ## 開発環境
@@ -20,4 +26,5 @@ https://developer.vuforia.com/downloads/sdk
 |  Mixed Reality Toolkit<br>- Foundation<br>- Extensions<br>- StandardAssets<br>- Tools  |  2.8.2  |
 |  Mixed Reality Scene Understanding  | 0.6.0 |
 |  Mixed Reality OpenXR Plugin  |  1.6.0  |
+|  Feature Mixed Reality WinRT (dotnetwinrt)  | 0.5.2009 |
 |  Vuforia  |  10.11.3  |
