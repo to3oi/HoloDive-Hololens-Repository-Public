@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
+  <Tracking>
+    <ImageTarget name="ResearchJournal" size="0.400000 0.620424" />
+    <ImageTarget name="CodeEntryScreen" size="1.000000 0.665429" />
+    <ImageTarget name="SurveillanceMonitor" size="1.000000 0.562500" />
+    <ImageTarget name="BombDefusingDevice" size="1.000000 0.446127" />
+    <ImageTarget name="startdevice_IR" size="0.600000 0.409581" />
+    <ImageTarget name="MainMonitor" size="1.800000 1.012500" />
+  </Tracking>
+</QCARConfig>
