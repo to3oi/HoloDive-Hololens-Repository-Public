@@ -5,7 +5,7 @@ Vuforiaのアカウントを作成し、以下のリンクよりパッケージ�
 https://developer.vuforia.com/downloads/sdk
 
 
-また以下のリンクの手順より`Feature Mixed Reality WinRT`を追加してください。
+また以下のリンクの手順より`Mixed Reality WinRT Projections`を追加してください。
 https://learn.microsoft.com/ja-jp/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool
 
 ![Feature Mixed Reality WinRT](/Image/FeatureMixedRealityWinRTImage.png)
