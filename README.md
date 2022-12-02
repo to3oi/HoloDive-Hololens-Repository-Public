@@ -3,7 +3,6 @@
 Vuforiaのアカウントを作成し、以下のリンクよりパッケージをダウンロードし、インポートしてください。<br>
 https://developer.vuforia.com/downloads/sdk
 
-
 ## - MRTK
 以下のリンクの手順より`Mixed Reality WinRT Projections`を追加してください。<br>
 https://learn.microsoft.com/ja-jp/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool
@@ -12,6 +11,12 @@ https://learn.microsoft.com/ja-jp/windows/mixed-reality/develop/unity/welcome-to
 
 ## - Platform
 Build SettingよりUWPに変更してください。
+
+## - 注意
+- 初回はVuforiaアセットがインポートされていないためエラーが出ます。IgnoreやSafeModeでプロジェクトを立ち上げアセットをインポートしてください。
+- Vuforiaをインポートする際、読み込まないことがあります。その場合はUnityを起動し直してください。
+- 稀にMRTKのPrefabが見つからないことがありますが、気にせずにClearしてください。
+- 開発で使用しているSceneは`Assets/Scenes/MainGame.unity`です。
 
 # 開発期間
 2022/10/05 ~ 
