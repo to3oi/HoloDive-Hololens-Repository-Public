@@ -18,6 +18,11 @@ Build SettingよりUWPに変更してください。
 - 稀にMRTKのPrefabが見つからないことがありますが、気にせずにClearしてください。
 - 開発で使用しているSceneは`Assets/Scenes/MainGame.unity`です。
 
+# 遊び方
+[Wiki](https://github.com/tomoi/HoloDive-Hololens-Repository-Public/wiki)からCOMGameSHOWビルドバージョンなど対象のバージョンのページを開き画像認識用画像を上から順番に読み込ませることでゲームを進めることができます。
+## - 注意
+このゲームはHololensにビルドして遊ぶことを想定しています。
+Hololensがない場合はUnityEditor上で実行しwebカメラで画像認識をすることも可能ですが、オブジェクトの位置が重なったり、エフェクトが画面内にうまく表示されないといった問題が出る可能性があります。
 # 開発期間
 2022/10/05 ~ 
 # 開発環境
