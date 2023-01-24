@@ -36,6 +36,7 @@ Hololensがない場合はUnityEditor上で実行しwebカメラで画像認識�
 |  Universal RP  |  12.1.6   |
 |  UniRx  |  6.2.2  |
 |  UniTask  |  2.3.2  |
+|  DOTween (HOTween v2)  |  1.2.705  |
 |  Mixed Reality Toolkit<br>- Foundation<br>- Extensions<br>- StandardAssets<br>- Tools  |  2.8.2  |
 |  Mixed Reality Scene Understanding  | 0.6.0 |
 |  Mixed Reality OpenXR Plugin  |  1.6.0  |
