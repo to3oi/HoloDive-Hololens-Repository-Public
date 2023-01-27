@@ -1,5 +1,7 @@
 using UnityEngine;
-
+/// <summary>
+/// 手の甲のトリガーに触れる処理をデバッグするスクリプト
+/// </summary>
 public class Debug_TapGameObjectChangeColor : MonoBehaviour
 {
     private MeshRenderer _renderer;

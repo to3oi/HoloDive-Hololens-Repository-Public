@@ -123,6 +123,7 @@ MonoBehaviour:
   AlwaysShowObject: {fileID: 6075824356816701955}
   AlwaysShowObjectForwardOffset: 0.6
   AlwaysShowObjectDownOffset: 0.3
+  isShowArrow: 1
 --- !u!1 &3076638751134587453
 GameObject:
   m_ObjectHideFlags: 0

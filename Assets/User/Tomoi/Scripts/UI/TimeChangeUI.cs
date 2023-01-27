@@ -2,6 +2,9 @@ using UniRx;
 using UnityEngine;
 using UnityEngine.Rendering.Universal;
 
+/// <summary>
+/// 手の甲に表示するデカールを更新するスクリプト
+/// </summary>
 [RequireComponent(typeof(DecalProjector))]
 public class TimeChangeUI : MonoBehaviour
 {
@@ -11,30 +14,31 @@ public class TimeChangeUI : MonoBehaviour
     private Material _decalMaterial;
     private DecalProjector _decalProjector;
 
-    void Start()
+    private void Start()
     {
         _decalProjector = GetComponent<DecalProjector>();
-        //MeshRenderer meshRenderer = GetComponent<MeshRenderer>(); 
         _decalMaterial = new Material(_decalProjector.material);
         _decalProjector.material = _decalMaterial;
         
-        //set decal texture
+        //setup decal texture
         UpdateDecalTexture(TimeAxisManager.Instance.Axis);
-
+        
+        //時間軸の更新を購読し、変更があればテクスチャを更新する
         TimeAxisManager.Instance.TimeAxisObserver.Subscribe(axis => { UpdateDecalTexture(axis); }).AddTo(this);
     }
 
-    void UpdateDecalTexture(TimeAxisManager.axis axis)
+    /// <summary>
+    /// 手の甲に表示するデカールのテクスチャを変更
+    /// </summary>
+    /// <param name="axis"></param>
+    private void UpdateDecalTexture(TimeAxisManager.axis axis)
     {
-        Debug.Log("Change Decal");
         switch (axis)
         {
             case TimeAxisManager.axis.future:
-                //_decalMaterial.SetTexture("MainTexture", featureTexture);
                 _decalMaterial.SetTexture("Base_Map", featureTexture);
                 break;
             case TimeAxisManager.axis.past:
-                //_decalMaterial.SetTexture("MainTexture", pastTexture);
                 _decalMaterial.SetTexture("Base_Map", pastTexture);
                 break;
         }

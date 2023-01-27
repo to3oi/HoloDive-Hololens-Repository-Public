@@ -676,6 +676,7 @@ MonoBehaviour:
   AlwaysShowObject: {fileID: 1192572153860818873}
   AlwaysShowObjectForwardOffset: 0.6
   AlwaysShowObjectDownOffset: 0.3
+  isShowArrow: 1
 --- !u!114 &6474802045037994600
 MonoBehaviour:
   m_ObjectHideFlags: 0

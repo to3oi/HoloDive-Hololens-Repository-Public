@@ -1,6 +1,5 @@
 using System;
 using UniRx;
-using ObservableExtensions = UniRx.ObservableExtensions;
 
 public class TimeAxisManager : SingletonMonoBehaviour<TimeAxisManager>
 {
@@ -17,8 +16,9 @@ public class TimeAxisManager : SingletonMonoBehaviour<TimeAxisManager>
     void Start()
     {
         //ダブルクリックを購読し、変更されたタイミングでステートを変更する
-        ObservableExtensions.Subscribe(TouchArmToChangeTimeAxis.Instance.ClickResultObserver, _ =>
+        TouchArmToChangeTimeAxisManager.Instance.ClickResultObserver.Skip(1).Subscribe(_ =>
         {
+            GameManager.Instance.SetState(GameState.TimeShifted);
             ChangeTimeAxis();
         }).AddTo(this);
         //時間軸の変更を監視しsubjectの発行をする
@@ -26,7 +26,6 @@ public class TimeAxisManager : SingletonMonoBehaviour<TimeAxisManager>
         {
             _axisSubject.OnNext(Axis);
         }).AddTo(this);
-
     }
 
     /// <summary>

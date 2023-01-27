@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7289146318968373276}
   - component: {fileID: 7289146318968373278}
   - component: {fileID: 231246240237383479}
+  - component: {fileID: 1053519177945624900}
   m_Layer: 0
   m_Name: TouchArmToChangeTimeAxisManager
   m_TagString: Untagged
@@ -81,3 +82,15 @@ MonoBehaviour:
   _rightHandCollider: {fileID: 2849042930697240997, guid: 0fc9dec3cdab54348bea305f7a15a5e8,
     type: 3}
   _scale: {x: 0.03, y: 0.03, z: 0.03}
+--- !u!114 &1053519177945624900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7289146318968373275}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f2b97d0d281f4044be74c869e8bb8b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

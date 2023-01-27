@@ -1,6 +1,9 @@
 using TMPro;
 using UnityEngine;
 
+/// <summary>
+/// ホロレンズの位置がUnityのシーン上で現在どの位置にあるかデバッグするスクリプト
+/// </summary>
 public class Debug_CanvasWorldPosition : MonoBehaviour
 {
     [SerializeField] private bool isCameraPosition = false;

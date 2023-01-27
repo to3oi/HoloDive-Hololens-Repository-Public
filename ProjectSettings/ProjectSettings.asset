@@ -20,9 +20,9 @@ PlayerSettings:
   m_ShowUnitySplashScreen: 0
   m_ShowUnitySplashLogo: 1
   m_SplashScreenOverlayOpacity: 1
-  m_SplashScreenAnimation: 1
-  m_SplashScreenLogoStyle: 1
-  m_SplashScreenDrawMode: 0
+  m_SplashScreenAnimation: 2
+  m_SplashScreenLogoStyle: 0
+  m_SplashScreenDrawMode: 1
   m_SplashScreenBackgroundAnimationZoom: 1
   m_SplashScreenLogoAnimationZoom: 1
   m_SplashScreenBackgroundLandscapeAspect: 1
@@ -39,7 +39,9 @@ PlayerSettings:
     y: 0
     width: 1
     height: 1
-  m_SplashScreenLogos: []
+  m_SplashScreenLogos:
+  - logo: {fileID: 10404, guid: 0000000000000000e000000000000000, type: 0}
+    duration: 2
   m_VirtualRealitySplashScreen: {fileID: 2800000, guid: 456a390157da4be41a3c7a0fd40dbdfe,
     type: 3}
   m_HolographicTrackingLossScreen: {fileID: 0}
@@ -135,7 +137,7 @@ PlayerSettings:
     16:10: 1
     16:9: 1
     Others: 1
-  bundleVersion: 10.11.3
+  bundleVersion: 1.2.0
   preloadedAssets:
   - {fileID: 0}
   - {fileID: 0}
@@ -220,8 +222,39 @@ PlayerSettings:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  - {fileID: 6404369128266386416, guid: b42fdfb4301af6441ade275a99f57c43, type: 2}
-  - {fileID: 3282686133158980516, guid: 1d0540d5a5e74fc469c4ce894f37a716, type: 2}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 0}
   metroInputSource: 0
   wsaTransparentSwapchain: 0
@@ -790,7 +823,7 @@ PlayerSettings:
   scriptingDefineSymbols:
     : VUFORIA_ANDROID_SETTINGS
     Android: VUFORIA_ANDROID_SETTINGS
-    Windows Store Apps: VUFORIA_WSA_SETTINGS
+    Windows Store Apps: VUFORIA_WSA_SETTINGS;UNITASK_DOTWEEN_SUPPORT
     iPhone: VUFORIA_IOS_SETTINGS
   additionalCompilerArguments: {}
   platformArchitecture: {}
@@ -812,7 +845,7 @@ PlayerSettings:
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
   metroPackageName: HoloDive
-  metroPackageVersion: 10.11.3.0
+  metroPackageVersion: 1.1.0.0
   metroCertificatePath: Assets/WSATestCertificate.pfx
   metroCertificatePassword: XIOD
   metroCertificateSubject: TECH.C
@@ -872,7 +905,7 @@ PlayerSettings:
       AllJoyn: False
       MusicLibrary: False
       LowLevelDevices: False
-      PrivateNetworkClientServer: False
+      PrivateNetworkClientServer: True
       InternetClientServer: False
       Objects3D: False
       RemoteSystem: False

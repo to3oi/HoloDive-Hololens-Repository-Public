@@ -33,13 +33,6 @@ MonoBehaviour:
   pointerOptions:
   - controllerType: 5167
     handedness: 7
-    pointerPrefab: {fileID: 1247086986094436, guid: d5b94136462644c9873bb3347169ae7e,
-      type: 3}
-    prioritizedLayerMasks:
-    - serializedVersion: 2
-      m_Bits: 3221225467
-  - controllerType: 5167
-    handedness: 7
     pointerPrefab: {fileID: 1493306487985802004, guid: 63302a873ce57ab489bc61b1864f3c6f,
       type: 3}
     prioritizedLayerMasks:
@@ -79,7 +72,7 @@ MonoBehaviour:
       type: 3}
     prioritizedLayerMasks:
     - serializedVersion: 2
-      m_Bits: 4294967291
+      m_Bits: 3221225467
   pointerMediator:
     reference: Microsoft.MixedReality.Toolkit.Input.DefaultPointerMediator, Microsoft.MixedReality.Toolkit.SDK
   primaryPointerSelector:

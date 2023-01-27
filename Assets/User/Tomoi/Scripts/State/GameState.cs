@@ -1,5 +1,8 @@
 using System;
 
+/// <summary>
+/// ゲームの進行管理用のステート
+/// </summary>
 [Flags]
 public enum GameState
 {
@@ -11,21 +14,6 @@ public enum GameState
     LookDiary = 16,//日誌を見たときに使用する
     LookMasterPC = 32, //ロード中のマスターPCを見たときに使用する
     TrueEnd = 64, //爆弾を解除したときの画像を認識したときに使用する
-    BadEnd = 128//爆弾の解除に失敗した時の画像を認識したときに使用する
-
-    /*
-    None = 0,
-    A = 1,
-    B = 2,
-    C = 4,
-    D = 8,
-    E = 16,
-    F = 32,
-    G = 64,
-    H = 128,
-    I = 256,
-    J = 512,
-    K = 1024,
-    L = 2048,
-    */
+    BadEnd = 128,//爆弾の解除に失敗した時の画像を認識したときに使用する
+    TimeShifted = 256//手の甲を2回叩くことで時間軸の移動をしたことがあるか
 }

@@ -727,8 +727,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4cdffabbf27941a459c38ab4972e1706, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  featureTexture: {fileID: 2800000, guid: 4e6ec9dcd79947b428ffd2237e417d4d, type: 3}
-  pastTexture: {fileID: 2800000, guid: 70dab54ac71f10846a1f2fa7bac24d8a, type: 3}
+  featureTexture: {fileID: 2800000, guid: 70dab54ac71f10846a1f2fa7bac24d8a, type: 3}
+  pastTexture: {fileID: 2800000, guid: 4e6ec9dcd79947b428ffd2237e417d4d, type: 3}
 --- !u!114 &893010228973646293
 MonoBehaviour:
   m_ObjectHideFlags: 0

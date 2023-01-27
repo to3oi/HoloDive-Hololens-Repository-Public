@@ -1,12 +1,16 @@
 using UnityEngine;
 
+/// <summary>
+/// ゲーム全体の進行管理をする
+/// </summary>
 public class GameManager : SingletonMonoBehaviour<GameManager>
 {
-    public float Timer { get; private set;}
+    public float Timer { get; private set; }
+
     void Update()
     {
         //スタートデバイスを確認したらTimerを開始する
-        if(GetState(GameState.StartDevice))
+        if (GetState(GameState.StartDevice))
         {
             //使わないと思うけど一応
             Timer = Time.deltaTime;
@@ -31,7 +35,7 @@ public class GameManager : SingletonMonoBehaviour<GameManager>
     /// 現在のステートを削除する
     /// </summary>
     /// <param name="state"></param>
-   public  void RemoveState(GameState state)
+    public void RemoveState(GameState state)
     {
         _state &= ~state;
     }

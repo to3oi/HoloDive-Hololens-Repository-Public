@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: mat_TimeAxis
-  m_Shader: {fileID: -6465566751694194690, guid: 0749bf15fcac82a4dbd9a6103c98317d,
+  m_Shader: {fileID: -6465566751694194690, guid: 67d6fb1394640034ea4181ecca6454cc,
     type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
@@ -84,6 +84,7 @@ Material:
     - _BumpScale: 1
     - _ClearCoatMask: 0
     - _ClearCoatSmoothness: 0
+    - _ColorChangeElapsedTime: 0
     - _Cull: 2
     - _Cutoff: 0.5
     - _DetailAlbedoMapScale: 1
@@ -107,13 +108,16 @@ Material:
     - _Surface: 0
     - _WorkflowMode: 1
     - _ZWrite: 1
-    - _isHoloView: 1
+    - _isHoloView: 0
     m_Colors:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _HoloColor: {r: 0.04456247, g: 0.509434, b: 0, a: 0}
+    - _HoloViewColor: {r: 0.04456247, g: 0.509434, b: 0, a: 0}
     - _SpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
+    - _WallAfterColor: {r: 1, g: 0, b: 0, a: 1}
+    - _WallBaseColor: {r: 0, g: 5.109947, b: 7.999999, a: 0}
   m_BuildTextureStacks: []
 --- !u!114 &6633125294982716312
 MonoBehaviour:

@@ -1,5 +1,8 @@
 using System;
 
+/// <summary>
+/// マスターPCの入力に使用するKeyPadで使用する特殊な数字の一覧
+/// </summary>
 [Flags]
 public enum KeyPadEnum
 {
@@ -13,6 +16,6 @@ public enum KeyPadEnum
     Seven = 7,
     Eight = 8,
     Nine = 9,
-    X = 110,
-    V = 100
+    X = 110,//入力をクリア
+    V = 100//入力を確定
 }

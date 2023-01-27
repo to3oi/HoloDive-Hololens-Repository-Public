@@ -1,5 +1,8 @@
 using UnityEngine;
 
+/// <summary>
+/// GameManagerのステートごとのフラグが機能するかデバッグするスクリプト
+/// </summary>
 public class Debug_GameManager : MonoBehaviour
 {
     [SerializeField] private GameState _state;

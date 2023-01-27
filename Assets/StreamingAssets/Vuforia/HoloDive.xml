@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
   <Tracking>
+    <ImageTarget name="StudyDiaryWall" size="1.000000 0.210714" />
     <ImageTarget name="ResearchJournal" size="0.400000 0.620424" />
     <ImageTarget name="CodeEntryScreen" size="1.000000 0.665429" />
     <ImageTarget name="SurveillanceMonitor" size="1.000000 0.562500" />
