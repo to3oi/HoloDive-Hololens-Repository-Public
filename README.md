@@ -1,3 +1,6 @@
+# プレイ動画サンプル
+[![動画リンクはこちら](https://github.com/tomoi/HoloDive-Hololens-Repository-Public/blob/main/Image/Wiki/COMGameSHOW/COMGameShow1.0.1%20PlayMovieSampleThumbnail.png?raw=false)](https://youtu.be/smT1GH2vxLM)
+
 # 環境構築 
 ## - Vuforia
 Vuforiaのアカウントを作成し、以下のリンクよりパッケージをダウンロードし、インポートしてください。<br>
