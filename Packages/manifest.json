@@ -19,7 +19,7 @@
     "com.microsoft.windows.mixedreality.dotnetwinrt": "file:MixedReality/com.microsoft.windows.mixedreality.dotnetwinrt-0.5.2009.tgz",
     "com.cysharp.unitask": "https://github.com/Cysharp/UniTask.git?path=src/UniTask/Assets/Plugins/UniTask",
     "com.neuecc.unirx": "https://github.com/neuecc/UniRx.git?path=Assets/Plugins/UniRx/Scripts",
-    "com.ptc.vuforia.engine": "file:../Assets/Editor/Migration/com.ptc.vuforia.engine-10.11.3.tgz",
+    "com.ptc.vuforia.engine": "file:../Assets/Editor/Migration/com.ptc.vuforia.engine-10.13.3.tgz",
     "com.unity.2d.sprite": "1.0.0",
     "com.unity.2d.tilemap": "1.0.0",
     "com.unity.collab-proxy": "1.17.7",
