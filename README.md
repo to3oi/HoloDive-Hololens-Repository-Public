@@ -12,6 +12,10 @@ https://learn.microsoft.com/ja-jp/windows/mixed-reality/develop/unity/welcome-to
 
 ![Feature Mixed Reality WinRT](/Image/FeatureMixedRealityWinRTImage.png)
 
+## - DOTween (HOTween v2)
+[DOTween (HOTween v2)](https://assetstore.unity.com/packages/tools/animation/dotween-hotween-v2-27676?aid=1100lNUQ&pubref=unity-install-dotween&utm_campaign=unity_affiliate&utm_medium=affiliate&utm_source=partnerize-linkmaker
+) を Unity Assetstore よりImportしてください。
+
 ## - Platform
 Build SettingよりUWPに変更してください。
 
