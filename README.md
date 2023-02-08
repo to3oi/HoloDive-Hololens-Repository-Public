@@ -22,6 +22,32 @@ Build SettingよりUWPに変更してください。
 ## - 注意
 - 初回はVuforiaアセットがインポートされていないためエラーが出ます。IgnoreやSafeModeでプロジェクトを立ち上げアセットをインポートしてください。
 - Vuforiaをインポートする際、読み込まないことがあります。その場合はUnityを起動し直してください。
+- DefaultObserverEventHandlerが見つからない(Vuforiaを正常にインポートできない)場合以下のファイルを編集し追記してください。
+
+```
+Packages/manifest.json
+
+  "dependencies": {
+    "com.ptc.vuforia.engine": {
+      "version": "file:com.ptc.vuforia.engine-10.13.3.tgz", //任意のバージョン
+      "depth": 0,
+      "source": "local-tarball",
+      "dependencies": {
+        "com.unity.ugui": "1.0.0"
+      }
+    }
+  }
+```
+
+
+```
+Packages/packages-lock.json
+
+"dependencies": {
+    "com.ptc.vuforia.engine": "file:com.ptc.vuforia.engine-10.13.3.tgz" //任意のバージョン
+    }
+```
+
 - 稀にMRTKのPrefabが見つからないことがありますが、気にせずにClearしてください。
 - 開発で使用しているSceneは`Assets/Scenes/MainGame.unity`です。
 
@@ -48,4 +74,4 @@ Hololensがない場合はUnityEditor上で実行しwebカメラで画像認識�
 |  Mixed Reality Scene Understanding  | 0.6.0 |
 |  Mixed Reality OpenXR Plugin  |  1.6.0  |
 |  Feature Mixed Reality WinRT (dotnetwinrt)  | 0.5.2009 |
-|  Vuforia  |  10.11.3  |
+|  Vuforia  |  10.13.3  |
