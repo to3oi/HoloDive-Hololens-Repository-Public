@@ -43,6 +43,7 @@ public class PasscodeCube : MonoBehaviour
 
         //PasscodeCubeの再生性を受け取ったときにこのCubeが破棄されていたら再生成する
         MasterPCCancellationDeviceManager.Instance.RegenerationPasscode
+            //破棄と同時に呼ばれてしまうので一秒遅らせる
             .Delay(System.TimeSpan.FromSeconds(1.0f))
             .Subscribe(_ =>
             {
@@ -58,7 +59,9 @@ public class PasscodeCube : MonoBehaviour
     /// </summary>
     private void Generate()
     {
-        //破棄と同時に呼ばれてしまうので一秒遅らせる
+        //SEの再生
+        SEManager.Instance.PlaySE(SEType.MasterPCCancellationDevice_Redo,transform.position);
+
         isActive = true;
         transform.DOScale(defoultScale, 0.5f).SetEase(Ease.OutBack);
     }
@@ -68,6 +71,9 @@ public class PasscodeCube : MonoBehaviour
     /// </summary>
     private void Discarding()
     {
+        //SEの再生
+        SEManager.Instance.PlaySE(SEType.MasterPCCancellationDevice_DestructionEffect,transform.position);
+
         _destroyParticle.Play();
         isActive = false;
         transform.DOScale(Vector3.zero, 0.5f).SetEase(Ease.OutBack);

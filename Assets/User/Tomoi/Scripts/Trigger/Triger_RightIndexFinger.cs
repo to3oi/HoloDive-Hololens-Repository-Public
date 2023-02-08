@@ -20,6 +20,8 @@ public class Triger_RightIndexFinger : MonoBehaviour
         
         _leftHandColliderRoot = Instantiate(_rightHandCollider, transform);
         _leftHandColliderRoot.transform.localScale = _scale;
+        //左手の指のトリガーで手の甲をタップできてしまうためtagを変更し判定を削除
+        _leftHandColliderRoot.tag = "Untagged";
     }
 
     private void Update()

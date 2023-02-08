@@ -12,6 +12,11 @@ GameObject:
   - component: {fileID: 1539893023162421920}
   - component: {fileID: 1539893023162421921}
   - component: {fileID: 1539893023162421922}
+  - component: {fileID: 1539893023842703461}
+  - component: {fileID: 1539893023842703465}
+  - component: {fileID: 1539893023842703469}
+  - component: {fileID: 1539893023842703473}
+  - component: {fileID: 1539893023842703474}
   m_Layer: 0
   m_Name: ImageTarget_SurveillanceMonitor
   m_TagString: Untagged
@@ -79,6 +84,7 @@ MonoBehaviour:
   AlwaysShowObject: {fileID: 0}
   AlwaysShowObjectForwardOffset: 0.6
   AlwaysShowObjectDownOffset: 0.3
+  isShowArrow: 0
 --- !u!114 &1539893023162421922
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -123,6 +129,101 @@ MonoBehaviour:
   OnTargetLost:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1539893023842703461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1539893023162421925}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 1539893023162421920}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: SurveillanceMonitor
+  mDatasetName: Vuforia/HoloDive.xml
+  mCastedBehaviour: {fileID: 1539893023162421920}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
+--- !u!114 &1539893023842703465
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1539893023162421925}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 1539893023162421920}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: SurveillanceMonitor
+  mDatasetName: Vuforia/HoloDive.xml
+  mCastedBehaviour: {fileID: 1539893023162421920}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
+--- !u!114 &1539893023842703469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1539893023162421925}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 1539893023162421920}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: SurveillanceMonitor
+  mDatasetName: Vuforia/HoloDive.xml
+  mCastedBehaviour: {fileID: 1539893023162421920}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
+--- !u!114 &1539893023842703473
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1539893023162421925}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 1539893023162421920}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: SurveillanceMonitor
+  mDatasetName: Vuforia/HoloDive.xml
+  mCastedBehaviour: {fileID: 1539893023162421920}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
+--- !u!114 &1539893023842703474
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1539893023162421925}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 1539893023162421920}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: SurveillanceMonitor
+  mDatasetName: Vuforia/HoloDive.xml
+  mCastedBehaviour: {fileID: 1539893023162421920}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &4117548272307517498
 GameObject:
   m_ObjectHideFlags: 0
@@ -255,7 +356,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4117548272589941107}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -1.07, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -293,7 +394,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4117548272753210967}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.0067000017}
+  m_LocalPosition: {x: 0, y: 0, z: -0.013}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -303,7 +404,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -0}
   m_SizeDelta: {x: 0.96, y: 0.54}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &4117548272753210960
@@ -417,7 +518,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4117548272856178178}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0, z: -0.0067}
+  m_LocalPosition: {x: 0, y: -0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

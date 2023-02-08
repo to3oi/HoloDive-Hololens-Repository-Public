@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using Cysharp.Threading.Tasks;
 using UnityEngine;
 using UniRx;
 
@@ -32,7 +33,7 @@ public class MasterPCCancellationDeviceManager : SingletonMonoBehaviour<MasterPC
 
     void Start()
     {
-        _RegistrationPasscode.Subscribe(passcodeCubeColorEnum =>
+        _RegistrationPasscode.Subscribe(async passcodeCubeColorEnum =>
         {
             //パスを登録
             if (true)
@@ -56,6 +57,9 @@ public class MasterPCCancellationDeviceManager : SingletonMonoBehaviour<MasterPC
                 //正解ならMasterPCのロックを解除する
                 if (answer)
                 {
+                    await UniTask.Delay(TimeSpan.FromSeconds(1));
+                    //SEの再生
+                    SEManager.Instance.PlaySE(SEType.MasterPCCancellationDeviceManager_Success,_MasterPC.transform.position);
                     _MasterPC.UpdateMonitor();
                 }
                 //不正解ならPasscodeCubeを再生成し、入力された情報をクリアする

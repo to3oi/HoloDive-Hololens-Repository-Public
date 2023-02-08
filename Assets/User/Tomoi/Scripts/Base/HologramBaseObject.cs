@@ -43,15 +43,13 @@ public class HologramBaseObject : MonoBehaviour
     /// </summary>
     [SerializeField, Header("isAlwaysShowがtrueのときに表示するオブジェクトを指定する")]
     private GameObject AlwaysShowObject;
-    [Header("---")]
-    [Header("AlwaysShowObjectを生成する位置を指定")] [SerializeField, Header("Forward")]
+
+    [Header("---")] [Header("AlwaysShowObjectを生成する位置を指定")] [SerializeField, Header("Forward")]
     private float AlwaysShowObjectForwardOffset = 0.6f;
+
     [SerializeField, Header("Down")] private float AlwaysShowObjectDownOffset = 0.6f;
-    
-    [Space(10)]
-    
-    
-    [SerializeField, Header("isAlwaysShowと自身がtrueのときAlwaysShowObjectの方向に向き続ける矢印を生成する")]
+
+    [Space(10)] [SerializeField, Header("isAlwaysShowと自身がtrueのときAlwaysShowObjectの方向に向き続ける矢印を生成する")]
     private bool isShowArrow = false;
 
     /// <summary>
@@ -117,51 +115,58 @@ public class HologramBaseObject : MonoBehaviour
         viewedImage = true;
         isViewing = true;
 
-        //初めて画像認識するときのみ実行
-        if (isAlwaysShow && !isFarstLook)
+        //初めて画像認識したときにSEを再生
+        if (!isFarstLook)
         {
+            //SEの再生
+            SEManager.Instance.PlaySE(SEType.Hologram_Scan, transform.position);
             isFarstLook = true;
-            AlwaysShowObject.SetActive(true);
-            AlwaysShowObject.transform.parent = null;
-
-            #region AlwaysShowObjectの座標をプレイヤーの前の位置に更新する
-
-            //暫定的にカメラの回転を制限したオブジェクトを生成し、前方向のベクトルを取得する
-            //TODO:計算のみで実装
-            var cameraTransform = Camera.main.transform;
-
-            //上下の回転を制限
-            //プレイヤーの方向を向くよう回転を修正
-            var q = cameraTransform.rotation.eulerAngles;
-            q.x = 0;
-            q.z = 0;
-
-            var tempGameObject = new GameObject("tempGameObject")
+            
+            //AlwaysShowObjectが存在するときのみ実行
+            if (isAlwaysShow)
             {
-                transform =
+                AlwaysShowObject.SetActive(true);
+                AlwaysShowObject.transform.parent = null;
+
+                #region AlwaysShowObjectの座標をプレイヤーの前の位置に更新する
+
+                //暫定的にカメラの回転を制限したオブジェクトを生成し、前方向のベクトルを取得する
+                var cameraTransform = Camera.main.transform;
+
+                //上下の回転を制限
+                //プレイヤーの方向を向くよう回転を修正
+                var q = cameraTransform.rotation.eulerAngles;
+                q.x = 0;
+                q.z = 0;
+
+                var tempGameObject = new GameObject("tempGameObject")
                 {
-                    rotation = Quaternion.Euler(q)
+                    transform =
+                    {
+                        rotation = Quaternion.Euler(q)
+                    }
+                };
+
+                var p = cameraTransform.position +
+                        //前方向に座標を移動
+                        tempGameObject.transform.forward * AlwaysShowObjectForwardOffset +
+                        //カメラのY座標から一定値下にずらす
+                        -Vector3.up * AlwaysShowObjectDownOffset;
+
+                //座標を代入
+                AlwaysShowObject.transform.position = p;
+                AlwaysShowObject.transform.rotation = tempGameObject.transform.rotation;
+
+                #endregion
+
+                //(isShowArrow == true)時に矢印を表示する
+                if (isShowArrow)
+                {
+                    ArrowManager.Instance.SetupArrow(AlwaysShowObject);
                 }
-            };
 
-            var p = cameraTransform.position +
-                    //前方向に座標を移動
-                    tempGameObject.transform.forward * AlwaysShowObjectForwardOffset +
-                    //カメラのY座標から一定値下にずらす
-                    -Vector3.up * AlwaysShowObjectDownOffset;
-
-            //座標を代入
-            AlwaysShowObject.transform.position = p;
-
-            #endregion
-
-            //(isShowArrow == true)時に矢印を表示する
-            if (isShowArrow)
-            {
-                ArrowManager.Instance.SetupArrow(AlwaysShowObject);
+                ShowObject();
             }
-
-            ShowObject();
         }
     }
 
