@@ -121,7 +121,7 @@ public class HologramBaseObject : MonoBehaviour
             //SEの再生
             SEManager.Instance.PlaySE(SEType.Hologram_Scan, transform.position);
             isFarstLook = true;
-            
+
             //AlwaysShowObjectが存在するときのみ実行
             if (isAlwaysShow)
             {
@@ -164,9 +164,8 @@ public class HologramBaseObject : MonoBehaviour
                 {
                     ArrowManager.Instance.SetupArrow(AlwaysShowObject);
                 }
-
-                ShowObject();
             }
+            ShowObject();
         }
     }
 
