@@ -27,7 +27,7 @@ public class TouchArmToChangeTimeAxisManager : SingletonMonoBehaviour<TouchArmTo
             .RepeatSafe(); // 判定が終わったら繰り返し
         
         //上の判定がtrueのときにClickResultObserverを購読しているものに通知
-        tempObserver.Where(b => b).Skip(1).Subscribe(_ =>
+        tempObserver.Where(b => b).Subscribe(_ =>
         {
             _clickResultObserverSubject.OnNext(Unit.Default);
         }).AddTo(this);
